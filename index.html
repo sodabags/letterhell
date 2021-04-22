@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Letterhell</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 540px; background: #231F20"></canvas>
+    <script src="Build/Letterhell-Web.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Letterhell-Web.data",
+        frameworkUrl: "Build/Letterhell-Web.framework.js",
+        codeUrl: "Build/Letterhell-Web.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Sodabags Studios",
+        productName: "Letterhell",
+        productVersion: "1",
+      });
+    </script>
+  </body>
+</html>
